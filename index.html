@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成AI活用セミナー 練習文</title>
+<style>
+  :root { --navy:#17406D; --blue:#0F6FC6; --pale:#EAF4FB; --ink:#333; --ok:#1E7F4F; --bg:#FFFFFF; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: "Meiryo","メイリオ","Hiragino Sans",sans-serif; font-size:20px; line-height:1.7; }
+  header { background:var(--navy); color:#fff; padding:18px 24px; }
+  header h1 { margin:0; font-size:26px; }
+  header p { margin:4px 0 0; font-size:16px; opacity:.9; }
+  nav { display:flex; gap:8px; padding:14px 24px 0; flex-wrap:wrap; }
+  nav button { font:inherit; font-size:20px; padding:8px 22px; border:2px solid var(--blue);
+               background:#fff; color:var(--blue); border-radius:8px; cursor:pointer; }
+  nav button[aria-selected="true"] { background:var(--blue); color:#fff; }
+  main { padding:16px 24px 48px; max-width:980px; }
+  .how { background:var(--pale); border-radius:10px; padding:12px 18px; margin:8px 0 20px; font-size:18px; }
+  .card { border:2px solid #C9DDF0; border-radius:12px; padding:16px 20px; margin:0 0 22px; }
+  .card h2 { margin:0 0 6px; font-size:24px; color:var(--navy); }
+  .text { white-space:pre-wrap; background:#F7F9FC; border-radius:8px; padding:12px 16px; margin:8px 0; }
+  .copy { font:inherit; font-size:22px; font-weight:bold; padding:10px 28px; border:0; border-radius:10px;
+          background:var(--blue); color:#fff; cursor:pointer; }
+  .copy:focus-visible, nav button:focus-visible { outline:3px solid #F2B600; outline-offset:2px; }
+  .done { margin-left:12px; color:var(--ok); font-weight:bold; }
+  .then { margin-top:12px; }
+  .then b { color:var(--navy); }
+  .say { display:inline-block; background:#FFF6D6; border-radius:6px; padding:2px 10px; }
+  .soon { color:#666; }
+  footer { padding:0 24px 32px; font-size:14px; color:#777; }
+</style>
+</head>
+<body>
+<header>
+  <h1>生成AI活用セミナー　練習文</h1>
+  <p>さぬき市商工会　｜　文章はすべて練習用に作った架空のものです</p>
+</header>
+
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-day="d1">第1回 11/5</button>
+  <button role="tab" aria-selected="false" data-day="d2">第2回 11/12</button>
+  <button role="tab" aria-selected="false" data-day="d3">第3回 11/19</button>
+</nav>
+
+<main>
+  <div class="how">
+    <b>使い方</b>：①「練習文をコピー」を押す　②AIの入力欄をクリック　③ <b>Ctrl ＋ V</b> で貼り付け（Macは ⌘ ＋ V）<br>
+    このページは閉じずに、AIの画面と行ったり来たりしてください。
+  </div>
+
+  <section id="d1">
+    <p>ある小さな会社が、地域のイベントに初めて出店します。会社・人・出来事はすべて架空です。</p>
+    <div class="card">
+      <h2>型1　短くする　― 社長から届いた、長い連絡</h2>
+      <div class="text" id="t1">みなさん、お疲れさまです。来週14日（土）の地域イベントですが、出店することになりました。ちなみに社長の私は今回も張り切っています。
+昨年は準備不足で、お客様から「何を売っている店なの？」と聞かれたので、今年は看板を大きくしたいと思います。ただし予算はあまりありません。
+販売するのは焼き菓子3種類です。試食も出したいのですが、衛生面の確認が必要なので、まだ決定していません。
+テーブル2台は商工会から借りられるそうです。車は田中さんにお願いしました。搬入は当日の午前8時からです。
+昨年は社長の私が張り切って商品を作りすぎ、最後は家族全員で3日間お菓子を食べ続けました。今年は売れ残りを減らしたいです。
+看板の準備は佐藤さん、販売数量の検討は田中さんにお願いします。どちらも11月10日までに一度報告してください。
+では、今年こそ大成功させましょう！</div>
+      <button class="copy" data-target="t1">練習文をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">貼ったあと、続けて打ち込む一文：<span class="say">上の文章を、3行にまとめてください。</span></div>
+      <div class="then">△だったら、続けて足す一文：<span class="say">決まったことと、まだ決まっていないことを混ぜないでください。</span></div>
+    </div>
+
+    <div class="card">
+      <h2>型2　書き直す　― 急いで書いた、お客様へのメール</h2>
+      <div class="text" id="t2">山田さん
+この前の件、ありがとうございます。
+注文もらった商品ですが、今ちょっとイベントの準備と注文が重なっていて、いつもの日程では無理そうです。
+できるだけ急ぎますが、来週中に間に合うかはまだ分かりません。
+あと、前回の注文数量が違っていた件、こちらでも確認します。こっちのミスだったらすみません。
+社長からは「何とかしろ」と言われていますが、まだ何ともなっていません。
+とりあえず、よろしくお願いします。</div>
+      <button class="copy" data-target="t2">練習文をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">貼ったあと、続けて打ち込む一文：<span class="say">上の文章を、お客様に出せる丁寧さに書き直してください。</span></div>
+      <div class="then">△だったら、続けて足す一文：<span class="say">納期や原因など、決まっていないことは勝手に決めないでください。</span></div>
+    </div>
+
+    <div class="card">
+      <h2>型3　箇条書きにする　― 脱線した打ち合わせのメモ（時間があれば）</h2>
+      <div class="text" id="t3">11月5日、地域イベントについて打ち合わせ。
+社長は「今年こそ売上10万円！」と宣言。しかし、昨年の売上は誰も正確に覚えていない。
+販売商品は焼き菓子3種類に決定。価格は1個300円を予定しているが、原価を確認してから最終決定する。
+田中さんから「売れ残ったらどうする？」という意見。社長は「全部自分で食べる！」と言ったが、これは冗談。
+売れ残りへの対応は次回までに考える。
+佐藤さんが看板を作る。期限は11月10日。
+SNSでの告知は田中さんが担当。11月8日までに投稿する。
+社長から「着ぐるみで集客しては？」という提案があったが、全員が沈黙したため、採用は見送り。
+なお、雨天時の対応は決まっていない。
+次回の打ち合わせは11月10日、午後3時から。</div>
+      <button class="copy" data-target="t3">練習文をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">貼ったあと、続けて打ち込む一文：<span class="say">上の内容を、決まったこと、担当と期限、まだ決まっていないことに分けて箇条書きにしてください。</span></div>
+      <div class="then">△だったら、続けて足す一文：<span class="say">冗談や、見送った案は入れないでください。</span></div>
+    </div>
+  </section>
+
+  <section id="d2" hidden>
+    <p class="soon">第2回の練習文は、後日ここに追加します。</p>
+  </section>
+  <section id="d3" hidden>
+    <p class="soon">第3回の練習文は、後日ここに追加します。</p>
+  </section>
+</main>
+
+<footer>このページはインターネットにつながっていなくても使えます。入力した内容をどこかへ送る仕組みはありません。</footer>
+
+<script>
+  // タブ切り替え
+  document.querySelectorAll('nav button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('nav button').forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      document.querySelectorAll('main section').forEach(function (s) { s.hidden = (s.id !== b.dataset.day); });
+    });
+  });
+  // コピー。ファイルで開いたとき（file://）にも動くよう、古い方法を予備に持つ
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta); return ok;
+  }
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = document.getElementById(btn.dataset.target).innerText;
+      if (btn.dataset.skipFirstLine) { text = text.split('\n').slice(1).join('\n'); }
+      var msg = btn.nextElementSibling;
+      var show = function (ok) {
+        msg.textContent = ok ? 'コピーしました。AIの入力欄をクリックして Ctrl＋V' : 'うまくいきませんでした。文章をなぞって選び、Ctrl＋C でコピーしてください';
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { show(true); }, function () { show(fallbackCopy(text)); });
+      } else { show(fallbackCopy(text)); }
+    });
+  });
+</script>
+</body>
+</html>

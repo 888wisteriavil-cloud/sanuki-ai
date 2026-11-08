@@ -40,8 +40,8 @@
 </header>
 
 <nav role="tablist">
-  <button role="tab" aria-selected="true" data-day="d1">第1回 11/5</button>
-  <button role="tab" aria-selected="false" data-day="d2">第2回 11/12</button>
+  <button role="tab" aria-selected="false" data-day="d1">第1回 11/5</button>
+  <button role="tab" aria-selected="true" data-day="d2">第2回 11/12</button>
   <button role="tab" aria-selected="false" data-day="d3">第3回 11/19</button>
 </nav>
 
@@ -51,7 +51,7 @@
     このページは閉じずに、AIの画面と行ったり来たりしてください。
   </div>
 
-  <section id="d1">
+  <section id="d1" hidden>
     <p>ある小さな会社が、地域のイベントに初めて出店します。会社・人・出来事はすべて架空です。</p>
     <div class="card">
       <h2>型1　短くする　― 社長から届いた、長い連絡</h2>
@@ -99,8 +99,49 @@ SNSでの告知は田中さんが担当。11月8日までに投稿する。
     </div>
   </section>
 
-  <section id="d2" hidden>
-    <p class="soon">第2回の練習文は、後日ここに追加します。</p>
+  <section id="d2">
+    <p>自社情報シート（配付⑦）のデータです。下の枠をコピーしてメモ帳に貼り、「：」の後ろに書き足してください。</p>
+    <div class="card">
+      <h2>自社情報シート　7項目（書き込み用）</h2>
+      <div class="text" id="s1">【うちの会社の自己紹介】
+① どんな商売か（何を・誰に・どこで）：
+② お客様は誰か（主な客層。どんなときに来られるか）：
+③ 選ばれている理由（お客様によく言われること）：
+④ うちの言葉（商品の呼び方、使ってほしい言い方）：
+⑤ 使ってほしくない言葉（大げさな表現、法律上言えないこと）：
+⑥ 文章の調子（硬め／やわらかめ、長さの好み）：
+⑦ 今いちばん困っていること：</div>
+      <button class="copy" data-target="s1">7項目をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">お客様のお名前・連絡先、従業員個人のこと、口座番号・パスワード、特定のお客様だけの価格は書きません。</div>
+      <div class="then">AIに貼ったあと、続けて打ち込む一文：<span class="say">上の内容をふまえて、（　　　）を書いてください。</span></div>
+    </div>
+    <div class="card">
+      <h2>ものづくりの方は、こちらも（書ける欄だけ）</h2>
+      <div class="text" id="s2">⑧ 得意なサイズ・材料（小さい物〜大きい物、扱える材料）：
+⑨ 1日にどのくらい作れるか（忙しい時期・暇な時期も）：
+⑩ どこまで届けられるか（配送は自社か、運送会社か）：</div>
+      <button class="copy" data-target="s2">⑧〜⑩をコピー</button><span class="done" aria-live="polite"></span>
+    </div>
+    <div class="card">
+      <h2>記入例　― 架空のA製作所（2コマ目で画面に出した会社）</h2>
+      <div class="text" id="s3">【うちの会社の自己紹介（架空の会社です）】
+① どんな商売か：A製作所。香川県で、機械部品の切削・穴あけ加工を請け負っています。従業員12名。図面をいただいて、1個から加工します。
+② お客様は誰か：県内の機械メーカーと、その協力会社。試作品や、急ぎの追加注文が多いです。
+③ 選ばれている理由：「図面に無理があるとき、先に言ってくれる」「1個でも嫌がらない」とよく言われます。
+④ うちの言葉：「お客様」ではなく「お取引先様」。「納期」ではなく「お届け日」。
+⑤ 使ってほしくない言葉：「業界No.1」「最高品質」など、比べようのない言い方。
+⑥ 文章の調子：硬すぎず、丁寧に。短めが好みです。
+⑦ 今いちばん困っていること：新しいお取引先が増えていない。
+⑧ 得意なサイズ・材料：手のひらに乗る大きさから、30センチ程度まで。鉄・ステンレス・アルミ。
+⑨ 1日にどのくらい作れるか：試作なら1日数個から。量産は月に数百個まで。3月と9月は忙しいです。
+⑩ どこまで届けられるか：自社のトラックで香川県内は当日、四国内は翌日にお届けできます。</div>
+      <button class="copy" data-target="s3">記入例をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">会社・数字はすべて架空です。書き方の参考にしてください。</div>
+    </div>
+    <div class="card">
+      <h2>Wordのファイル</h2>
+      <p><a href="jisha-jouhou-sheet.docx" download>自社情報シート（Word・記入例つき）をダウンロード</a></p>
+    </div>
   </section>
   <section id="d3" hidden>
     <p class="soon">第3回の練習文は、後日ここに追加します。</p>

@@ -41,8 +41,8 @@
 
 <nav role="tablist">
   <button role="tab" aria-selected="false" data-day="d1">第1回 11/5</button>
-  <button role="tab" aria-selected="true" data-day="d2">第2回 11/12</button>
-  <button role="tab" aria-selected="false" data-day="d3">第3回 11/19</button>
+  <button role="tab" aria-selected="false" data-day="d2">第2回 11/12</button>
+  <button role="tab" aria-selected="true" data-day="d3">第3回 11/19</button>
 </nav>
 
 <main>
@@ -99,7 +99,7 @@ SNSでの告知は田中さんが担当。11月8日までに投稿する。
     </div>
   </section>
 
-  <section id="d2">
+  <section id="d2" hidden>
     <p>自社情報シート（配付⑧）と自社専用の指示文（配付⑨）のデータです。下の枠をコピーしてメモ帳に貼り、「：」の後ろに書き足してください。</p>
     <div class="card">
       <h2>自社情報シート　7項目（書き込み用）</h2>
@@ -166,8 +166,73 @@ D 出力の形：そのまま印刷できる形で</div>
       <p><a href="shijibun-sheet.docx" download>自社専用の指示文（配付⑨・Word）をダウンロード</a></p>
     </div>
   </section>
-  <section id="d3" hidden>
-    <p class="soon">第3回の練習文は、後日ここに追加します。</p>
+  <section id="d3">
+    <p>第3回で使う頼み方です。「コピー」を押して、AIの入力欄に貼ってください。（　）の中は、ご自分の言葉に書き換えます。</p>
+    <div class="card">
+      <h2>作るものが決まらない方　― 候補を5つ出してもらう</h2>
+      <div class="text" id="u1">上の内容は、私の会社の自己紹介です。この会社で、無料のAIを使って毎週の仕事を少し楽にできそうなことを、5つ挙げてください。1つずつ、どんな仕事か、AIに何を渡すか、どのくらい時間が浮きそうか、お客様の名前を入れずにできるか、を書いてください。今日の20分で試せるものから順に並べてください。</div>
+      <button class="copy" data-target="u1">この頼み方をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">先に自社情報（メモ帳）を貼ってから送ります。選んだら、続けて：<span class="say">その中から（　）番を選びます。始めるのに必要なことを、1問ずつ聞いてください。</span></div>
+      <div class="then">送金・発注・採用・お客様への自動送信のような候補は、今日は選びません。</div>
+    </div>
+    <div class="card">
+      <h2>資料を渡したら、この3つの順で</h2>
+      <div class="text" id="u2">① この資料に何が書いてあるか、足りない情報は何か、教えてください。
+② 資料に書いてあることと、あなたが足したことを、分けて書いてください。
+③ それは、資料のどこに書いてありましたか。</div>
+      <button class="copy" data-target="u2">3つの頼み方をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">1行ずつ、順番に送ります。②は、前回の指示文に一言添える形でも構いません。</div>
+    </div>
+    <div class="card">
+      <h2>過去の完成形から、次のたたき台を早く作る</h2>
+      <div class="text" id="u3">① これは当社が前に作った（工程表／生産計画／仕込み表／見積）の完成形です。名前と住所は伏せています。まず、読み取れた内容を表にしてください。読めない所は「読めない」と書いてください。
+② これを作るのに、毎回時間がかかっています。似た案件のたたき台を早く作れるようにしたいです。足りない情報があれば、すぐに答えを出さず、1問ずつ質問してください。
+③ ここまでの内容から、うちの標準の型を作ってください。順番、標準の日数や量、延びやすいところ、並べて進められるところを入れてください。
+④ 次の条件でたたき台を作ってください。（条件）Excelに貼れる形（タブ区切り）で、日付は出さなくて結構です。</div>
+      <button class="copy" data-target="u3">4つの頼み方をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">1つずつ送ります。③の型はメモ帳（Word）に保存。日付・合計はAIに計算させず、Excelで数えます。</div>
+    </div>
+    <div class="card">
+      <h2>うまくいかないときの直し方（4つ）</h2>
+      <div class="text" id="u4">① 長さ・相手・言葉を足す：（200字で）（初めてのお客様に）（「お取引先様」と呼んで）書き直してください。
+② 悪い例と並べる：前にうまくいった文と並べます。何が違いますか。
+③ 分けて頼む：まず構成だけ出してください。
+④ もう一方のAIに、同じ頼み方を貼る（ChatGPT ⇔ Gemini）</div>
+      <button class="copy" data-target="u4">直し方をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">①から順に試します。数字の間違いはAIに直させず、Excelや電卓で確かめます。</div>
+    </div>
+    <div class="card">
+      <h2>やり方そのものを相談する</h2>
+      <div class="text" id="u5">（何のための仕事か）、（いまどうやっているか）、（どこが面倒か）。この仕事、あなたを使って楽にするには、どうすればよいですか。すぐに答えを出さず、足りないことを1問ずつ質問してください。</div>
+      <button class="copy" data-target="u5">この頼み方をコピー</button><span class="done" aria-live="polite"></span>
+    </div>
+    <div class="card">
+      <h2>明日からの3行（書き込み用）</h2>
+      <div class="text" id="u6">誰が：
+いつ（曜日か出来事で）：
+どの業務で：
+来週1回だけやること：
+うまくいったら（前は何分→いまは何分）：
+うまくいかなかったら：
+空いた時間の行き先：</div>
+      <button class="copy" data-target="u6">3行の型をコピー</button><span class="done" aria-live="polite"></span>
+      <div class="then">メモ帳に貼って、「：」の後ろに書き足してください。</div>
+    </div>
+    <div class="card">
+      <h2>資料が紙しかないとき</h2>
+      <p>① お客様の名前・住所・電話は、付箋か紙で隠す（折ってもよい）<br>
+      ② スマホのGeminiアプリで、まっすぐ・明るく・1枚ずつ撮って送る（いちばん簡単）<br>
+      ③ パソコンで続けたいときは、撮った写真を自分あてのメールなどで送り、パソコンのGeminiに付ける<br>
+      ④ 渡したら、まず「どこまで読めましたか」と聞く。手書きの字は読み違えやすいので、1か所は元の紙と見比べる</p>
+    </div>
+    <div class="card">
+      <h2>ファイル（配付資料のデータ）</h2>
+      <p><a href="day3-1-seikabutsu.docx" download>持参資料から成果物（配付⑩・Word）</a></p>
+      <p><a href="day3-2-naoshikata.docx" download>うまくいかないときの直し方（配付⑪・Word）</a></p>
+      <p><a href="day3-3-ashita.docx" download>明日からの使い方（配付⑫・Word）</a></p>
+      <p><a href="day3-4-kurabe.docx" download>AIの版の比べ表（配付⑬・Word）</a></p>
+      <p><a href="koutei-renshu.xlsx" download>練習用の工程表（架空の木造住宅・Excel）</a>　― 過去の完成形2つと、日付をExcelが数える練習用シート</p>
+    </div>
   </section>
 </main>
 
